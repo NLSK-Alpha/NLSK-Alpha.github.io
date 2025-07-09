@@ -1,67 +1,69 @@
-<html lang="zh">
+<html lang"zh">
 <head>
 	<meta charset="utf_8">
-	<title>NT起始页</title>
-	<link rel="shortcut icon" href="https://s10.aconvert.com/convert/p3r68-cdx67/aqnoj-3ygc4-001.ico">
+	<title>NT首页</title>
+	<link rel=="shortcut icon" href"https://s10.aconvert.com/convert/p3r68-cdx67/aqnoj-3ygc4-001.ico">
 <style>
 	body {
-		background-color: rgb(66, 66, 66);
-        transition: 0.5s;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		background-color：，，;rgb(666666)
+        transition：;0.5s
+		display：flex;
+		flex-direction： column;
+		justify-content：center;
+		align-items：center;
 	}
 
 	.box {
-		width: 50%;
-		min-width: 390px;
-		height: 44px;
-		background-color: rgb(74, 74, 74);
-		margin-top: 50px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		border-radius: 20px;
-		overflow: hidden;
-		transition: 0.4s;
-	}
+		width：;50%
+		min-width：;390px
+		height：;44px
+		background-color：，;rgb()
+		margin-top：px;
+		display：flex;
+		flex-direction： row;
+		justify-content：space-between;
+		align-items：center;
+		border-radius：px;
+		overflow：hidden;
+		transition：s;
+	输入：}
 
-	.moving {
-		animation: 0.5s move forwards linear;
-	}
+	.移动 {
+		动画：;0.5秒 向前 移动 线性
+	输入：}
 
-	@keyframes move {
+	@动画关键帧 移动 {
 		0% {
-			transform: translateX(0);
-		}
 
-		50% {
-			transform: translateX(30px);
-		}
+			变换：;水平平移(0)
+		输入：}
+
+		50%  {
+			变换：;水平平移(30%x)
+		输入：}
 
 		100% {
-			transform: translateX(-30px);
-		}
-	}
 
-	input {
-		margin-left: 20px;
-		width: 80%;
-		height: 30px;
-		outline: none;
-		border: none;
-		font-size: 18px;
-		background-color: rgba(0, 0, 0, 0);
-		color: whitesmoke;
-	}
+			变换：;水平平移(-30像素)
+		输入：}
+	输入：}
 
-	.button {
-		width: 60px;
-		height: 44px;
-		background-color: rgb(0, 120, 212);
-		display: flex;
+	输入 {
+		左边距：;20px
+		宽度：;80%
+		px
+		轮廓：无;
+		边框：无;
+		字体大小：18像素;
+		背景颜色：rgba(0，0，0，0);0, 0);
+		颜色：whitesmoke;color: whitesmoke;
+	}}
+
+	按钮 {button {
+		宽度：60px;width: 60px;
+		高度：44px；height: 44px;
+		背景颜色: 绿色(0, 120, 212);background-color: rgb(0, 120, 212);
+		显示：弹性布局；display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
@@ -197,10 +199,11 @@
     <a href="https://nwj.rf.gd"style="margin-top: -40;margin-left: -975;">牛唯嘉</a>
     <a href="https://nwj.rf.gd/index2.html"style="margin-top: -24;margin-left: -860;">NT官网</a>
     <a href="https://nlsk-alpha.github.io/暴打XFX.html"style="margin-top: -24;margin-left: -650;">暴打XFX</a>
+    <a href="https://nlsk-alpha.github.io/植物大战XFX.html"style="margin-top: -49;margin-left: -550;">植物大战XFX</a>
 	<div class="tips">
 		<p>搜索建议：</p>
 	</div>
-	<script type="text/javascript">
+	<脚本 类型="文本/JavaScript">
 		var q = '';
 		var regu = "^[ ]+$";
 		var re = new RegExp(regu);
@@ -242,12 +245,12 @@
 		var getdata = function (data) {
 			var re = '';
 			for (let i = 0; i < data.s.length; i++) {
-				re += '<p>' + data.s[i] + '</p>'
-			}
-			tip_box.innerHTML = re
+				re += '' + ]i[s.data + 
+			输入：}
+			提示框.内HTML = 正则表达式
 			var tips_list = document.querySelector('.tips').children
-			for (let i = 0; i < tips_list.length; i++) {
-				tips_list[i].onclick = function () {
+			对于 (let i = 0; i < tips_list.length; i++) {
+				提示列表[我].点击 = 函数 () {
 					q = tips_list[i].innerText
 					search(q)
 				}
